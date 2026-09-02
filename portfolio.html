@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Study — Interhyp Home Collaboration Model | Mojdeh Khoshpoor</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Mojdeh Khoshpoor</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a class="navlink" href="index.html#about">About</a></li>
+        <li><a class="navlink" href="index.html#experience">Experience</a></li>
+        <li><a class="navlink" href="index.html#contact">Contact</a></li>
+      </ul>
+      <a class="btn" href="assets/pdf/Mojdeh_Khoshpoor_CV.pdf" download>Download CV</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PASSWORD GATE ============ -->
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <div class="icon">🔒</div>
+    <h2>This case study is private</h2>
+    <p>It walks through a real Interhyp project, so I only share it with people I've sent the password to directly. If that's you, go ahead.</p>
+    <form class="gate-form" id="gate-form">
+      <input type="password" id="gate-password" placeholder="Password" autocomplete="off" required>
+      <button type="submit">Unlock case study</button>
+      <div class="gate-error" id="gate-error"></div>
+    </form>
+    <p style="margin-top:18px;font-size:0.82rem;">Don't have it? <a href="index.html#contact" style="color:var(--accent);font-weight:600;">Get in touch</a>.</p>
+  </div>
+</div>
+
+<!-- ============ CASE STUDY CONTENT ============ -->
+<div id="case-content" class="hidden">
+
+  <header class="case-hero">
+    <div class="wrap">
+      <span class="eyebrow">Master's thesis case study · Interhyp Group</span>
+      <h1>A collaboration model for the Interhyp Home platform</h1>
+      <p class="lede">How should a mortgage advisor and their client work on the same application, at the same time, without stepping on each other's changes? I spent five months researching, designing and testing an answer — and it became my Master's thesis, graded 1.0.</p>
+
+      <div class="case-meta">
+        <div><span class="label">My role</span><span class="value">UX design, research &amp; testing (solo, with a UX team supervisor)</span></div>
+        <div><span class="label">Timeline</span><span class="value">5 months · 2022</span></div>
+        <div><span class="label">Company</span><span class="value">Interhyp Group, Munich</span></div>
+        <div><span class="label">Tools</span><span class="value">Adobe XD, Miro, Microsoft Teams</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BACKGROUND -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Background</span>
+      <h2>One platform, replacing three</h2>
+      <p class="lede">Interhyp was merging three separate applications — Home, Sales and Credit — into a single platform, Interhyp Home, used by mortgage advisors, bank employees, clients and agents together. For the first time, these groups would overlap on the same screens.</p>
+      <p>The company had three goals for the new collaborative features: make every action in the platform transparent to everyone involved, keep the home-buying process simple, and keep the platform scalable as more user groups were added.</p>
+      <p>To keep a five-month thesis realistic, my supervisor and I narrowed the scope to two roles — the <b>agent</b> (a freelance mortgage broker) and the <b>client</b> — and to one step in their shared workflow: <b>data entry</b>, where both sides fill in and verify the same application data. It's the point with the most back-and-forth, and the most to lose if it's confusing.</p>
+
+      <div class="callout">
+        <p><b>Research question:</b> How does an optimal collaboration model between the agent and the client look within the Interhyp Home platform?</p>
+      </div>
+
+      <figure>
+        <img src="assets/img/process-diagram.jpg" alt="Diagram of the Interhyp Home housing process across client, agent and bank, highlighting the data entry and verification step this project focused on">
+        <figcaption>The housing process across client, agent and bank — this project focused on the highlighted "edit and verify data" loop between agent and client.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Approach</span>
+      <h2>Design thinking, in five months</h2>
+      <p class="lede">Interhyp's stakeholders had fixed requirements and milestones; my university needed a rigorous, documented process. Design thinking satisfied both — it's iterative enough to revisit earlier steps when testing turns up something new, which is exactly what happened here.</p>
+      <div class="process-steps">
+        <div class="step"><div class="num">1</div><h4>Empathize</h4></div>
+        <div class="step"><div class="num">2</div><h4>Define</h4></div>
+        <div class="step"><div class="num">3</div><h4>Ideate</h4></div>
+        <div class="step"><div class="num">4</div><h4>Prototype</h4></div>
+        <div class="step"><div class="num">5</div><h4>Test</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPATHIZE / RESEARCH -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Empathize</span>
+      <h2>What "good collaboration" already looks like</h2>
+      <p class="lede">I started with a competitive analysis across four kinds of collaborative tools — creative boards (Miro), documents (Google Docs), project management (Trello) and communication (Microsoft Teams, Slack) — to see how each handled the same underlying problem.</p>
+      <p>Across all four, five recurring patterns stood out as the features worth adapting: <b>history / versions</b>, <b>notifications or activity feed</b>, <b>real-time collaboration</b>, <b>online / offline status</b>, and <b>comments</b>. These became the candidate feature set for everything that followed.</p>
+
+      <h3 style="margin-top:36px;">Personas &amp; context of use</h3>
+      <p>Agents turned out to be less uniform than the initial brief assumed, so I built two agent personas and validated them with Prohyp's customer service team, who speak with agents daily.</p>
+
+      <div class="grid-4" style="margin-top:20px;">
+        <div class="persona-card">
+          <img src="assets/img/persona-florian.jpg" alt="Persona: Florian Schneider">
+          <div class="pc-body"><h4>Florian Schneider</h4><div class="pc-role">Financial advisor · primary persona</div><p>Full-time, tech-comfortable, handles a high volume of applications and wants speed above all.</p></div>
+        </div>
+        <div class="persona-card">
+          <img src="assets/img/persona-volker.jpg" alt="Persona: Volker Schmidt">
+          <div class="pc-body"><h4>Volker Schmidt</h4><div class="pc-role">Real estate agent · secondary persona</div><p>Financing is a side task next to his main business; needs the platform to ask little of him.</p></div>
+        </div>
+        <div class="persona-card">
+          <img src="assets/img/persona-susanne.jpg" alt="Persona: Susanne Freundlich">
+          <div class="pc-body"><h4>Susanne Freundlich</h4><div class="pc-role">Client</div><p>First-time buyer, relies heavily on her agent and wants to feel informed, not overwhelmed.</p></div>
+        </div>
+        <div class="persona-card">
+          <img src="assets/img/persona-alexander.jpg" alt="Persona: Alexander Kluge">
+          <div class="pc-body"><h4>Alexander Kluge</h4><div class="pc-role">Client</div><p>More experienced with paperwork, wants control and a clear record of who changed what.</p></div>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:26px;">
+        <p><span class="stat">40%</span>only about 40% of agents actually matched the "Florian" persona — yet, according to Interhyp's customer service team, that group generates <b>60–70% of Interhyp's revenue</b>. Designing for their speed and volume mattered more than designing for the average case.</p>
+      </div>
+
+      <div class="grid-2" style="margin-top:28px;">
+        <figure><img src="assets/img/context-office.jpg" alt="Context of use: an agent working in an office setting"><figcaption>Context of use — agents, mostly desk-based, multitasking across clients.</figcaption></figure>
+        <figure><img src="assets/img/context-home.jpg" alt="Context of use: a client reviewing their application at home"><figcaption>Context of use — clients, usually at home, checking in occasionally.</figcaption></figure>
+      </div>
+
+      <figure>
+        <img src="assets/img/journey-map.jpg" alt="User journey map of agent and client from first consultation through data entry and verification, showing emotional highs and lows at each step">
+        <figcaption>The journey map that pointed me at the real friction point: the moment either side edits shared data without the other noticing.</figcaption>
+      </figure>
+      <p>Both rows tell the same story: satisfaction holds steady through the early consultation, then drops sharply the moment one side discovers the other changed something — <i>"I did that?! But that's wrong, I have to correct that!"</i> — with no way to see what changed, when, or why. That single moment became the design target for the rest of the project.</p>
+    </div>
+  </section>
+
+  <!-- DEFINE -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Define</span>
+      <h2>Six candidate features, one problem statement</h2>
+      <p class="lede">Combining the competitive research with the journey map gave me six features to evaluate: activity history, notifications, real-time collaboration, online/offline status, comments, and version history.</p>
+      <p>The problem I defined from this: agents and clients edit the same data asynchronously, with no shared record of what changed, who changed it, or whether the other person is even active right now — and that gap is what turns a routine correction into a moment of frustration and lost trust.</p>
+    </div>
+  </section>
+
+  <!-- IDEATE / PROTOTYPE -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Ideate &amp; Prototype</span>
+      <h2>From paper to a clickable prototype</h2>
+      <p class="lede">I sketched each feature on paper first, then built clickable prototypes in Adobe XD on top of Interhyp Home's existing UI — the interface itself was already defined, so my job was to design how these collaborative layers sat on it.</p>
+
+      <div class="grid-2">
+        <figure><img src="assets/img/history.jpg" alt="First design of the combined activity and version history panel"><figcaption>Activity history and version history combined into one panel with two switchable tabs.</figcaption></figure>
+        <figure><img src="assets/img/notifications.jpg" alt="First design of the notification menu"><figcaption>A notification menu that opens from the bell icon and jumps straight to the changed field.</figcaption></figure>
+      </div>
+      <div class="grid-2">
+        <figure><img src="assets/img/realtime-online.jpg" alt="First design of real-time collaboration and online/offline status indicators"><figcaption>Presence indicators in the top bar — click a user's dot to jump to the field they're editing.</figcaption></figure>
+        <figure><img src="assets/img/comments.jpg" alt="First design of the inline comment function"><figcaption>Comments attached directly to a data field, so a question never gets separated from its context.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEST -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Test</span>
+      <h2>Two rounds of testing, one real pivot</h2>
+      <p class="lede">"Prototype as if you know you're right, but test as if you know you're wrong" — I took that literally and ran two rounds.</p>
+
+      <div class="grid-2">
+        <div class="skill-card">
+          <h3>Round 1 — Internal expert review</h3>
+          <p>4 participants: two UX experts, one developer, one product stakeholder. Caught structural issues early and got the design aligned with company requirements before it reached real users.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Round 2 — External usability test</h3>
+          <p>5 participants from Prohyp customer service, who speak with agents daily and were asked to role-play as one. Remote, moderated, think-aloud sessions over Microsoft Teams with a clickable Adobe XD prototype — I observed rather than facilitated, so I could focus entirely on reactions, hesitations and mouse movement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Results</span>
+      <h2>What the usability test actually found</h2>
+      <p class="lede">I scored every issue on frequency, task impact, business impact and persistence, following Nielsen's severity model, then prioritized fixes with my supervisor and the stakeholders.</p>
+
+      <table class="finding-table">
+        <thead>
+          <tr><th>Severity</th><th>Issue</th><th>Frequency</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="sev sev-3"></span>High</td><td>The history icon wasn't recognized without a direct hint</td><td>5 / 5</td></tr>
+          <tr><td><span class="sev sev-3"></span>High</td><td>Items in the activity list weren't understood as clickable</td><td>1 / 5</td></tr>
+          <tr><td><span class="sev sev-2"></span>Medium</td><td>Too much white space between activity items</td><td>2 / 5</td></tr>
+          <tr><td><span class="sev sev-2"></span>Medium</td><td>Participants expected activity and version history combined into one place</td><td>4 / 5</td></tr>
+          <tr><td><span class="sev sev-2"></span>Medium</td><td>Version history showed dates first; participants wanted to see <i>what</i> changed first</td><td>1 / 5</td></tr>
+          <tr><td><span class="sev sev-1"></span>Low</td><td>Comment icons were too small to notice immediately</td><td>1 / 5</td></tr>
+          <tr><td><span class="sev sev-1"></span>Low</td><td>Online/offline status needed to be adjustable, especially for agents</td><td>4 / 5</td></tr>
+          <tr><td><span class="sev sev-0"></span>Suggestion</td><td>Requests to archive comments and email a summary to clients</td><td>2–3 / 5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- LEARNINGS -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Evaluation</span>
+      <h2>Assumption → observation → design change</h2>
+      <p class="lede">The value of testing wasn't confirming what worked — it was the handful of moments where the data disagreed with my assumptions.</p>
+
+      <div class="insight">
+        <h4>Activity history &amp; notifications</h4>
+        <div class="row"><b>Assumed:</b> an activity feed would be self-explanatory and its icon instantly recognizable.</div>
+        <div class="row"><b>Observed:</b> every participant understood the feed once they found it — but none found the icon without help.</div>
+        <div class="row"><b>Changed:</b> gave the icon stronger visual weight and treated discoverability as its own design problem, separate from the feed's content.</div>
+      </div>
+
+      <div class="insight">
+        <h4>Version history</h4>
+        <div class="row"><b>Assumed:</b> version history and activity history were different enough to stay as two features.</div>
+        <div class="row"><b>Observed:</b> participants kept expecting them in the same place and were confused they weren't.</div>
+        <div class="row"><b>Changed:</b> merged both into one panel with two tabs, and reordered version entries to lead with <i>what changed</i> rather than the date.</div>
+      </div>
+
+      <div class="insight">
+        <h4>Comments</h4>
+        <div class="row"><b>Assumed:</b> attaching comments directly to a data field would make communication clearer for both sides.</div>
+        <div class="row"><b>Observed:</b> confirmed — participants immediately understood and used the feature correctly.</div>
+        <div class="row"><b>Changed:</b> kept the core interaction, and added archiving to the roadmap after multiple participants asked for it unprompted.</div>
+      </div>
+
+      <div class="insight">
+        <h4>Real-time &amp; online/offline status</h4>
+        <div class="row"><b>Assumed:</b> seeing when the other person was online, at all times, would build trust.</div>
+        <div class="row"><b>Observed:</b> agents juggling many clients found always-visible status distracting rather than reassuring.</div>
+        <div class="row"><b>Changed:</b> made the indicator something a user could choose to hide, rather than a fixed always-on signal.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="case-section">
+    <div class="wrap">
+      <span class="eyebrow">Outcome</span>
+      <h2>Recommendation &amp; reflection</h2>
+      <p>Based on the testing, I recommended Interhyp implement all five collaborative features for Interhyp Home's data-entry step, with the specific refinements above — the combined history panel, the more discoverable icon, adjustable presence, and comment archiving on the backlog. The thesis was graded 1.0.</p>
+      <p>If I ran it again, I'd test with real agents rather than customer-service staff role-playing as them, and I'd run a third round focused specifically on the two problems I suspected were caused by how I worded the tasks, not the design itself.</p>
+      <p>What stayed with me most: the biggest usability win here wasn't a clever interaction, it was making sure the loudest, most frequent pain point — <i>"wait, what changed and why?"</i> — had one obvious place to get answered.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" style="color:var(--accent);font-weight:600;text-decoration:none;">← Back to mojdeh.de</a>
+  </footer>
+
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gate.js"></script>
+</body>
+</html>

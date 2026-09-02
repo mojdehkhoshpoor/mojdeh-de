@@ -262,6 +262,43 @@ figcaption{ font-size:0.85rem; color:var(--ink-faint); margin-top:10px; text-ali
 .insight .row{ margin-bottom:6px; font-size:0.92rem; }
 .insight .row b{ color:var(--ink); }
 
+/* ---------- selected work (multi-project) ---------- */
+.work-toc{
+  list-style:none; margin:24px 0 0; padding:0;
+  display:grid; grid-template-columns:1fr 1fr; gap:6px 24px;
+}
+.work-toc li{
+  display:flex; justify-content:space-between; align-items:baseline; gap:10px;
+  border-bottom:1px solid var(--line); padding-bottom:6px;
+}
+.work-toc a{
+  text-decoration:none; color:var(--ink); font-weight:500; font-size:0.94rem;
+}
+.work-toc a:hover{ color:var(--accent); }
+.work-toc .wt-note{
+  font-size:0.76rem; color:var(--ink-faint); white-space:nowrap;
+}
+
+.wblock{ display:grid; grid-template-columns:140px 1fr; gap:0 24px; margin-top:20px; }
+.wblock-label{
+  font-size:0.75rem; text-transform:uppercase; letter-spacing:0.07em;
+  color:var(--ink-faint); font-weight:600; padding-top:2px;
+}
+.wblock p{ margin:0 0 0.8em; }
+.wblock p:last-child{ margin-bottom:0; }
+.wblock ul{ margin:0; padding-left:1.1em; color:var(--ink-soft); }
+.wblock li{ margin-bottom:6px; }
+.wblock b{ color:var(--accent); }
+
+.metrics{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.metric{
+  background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px;
+}
+.metric-num{
+  display:block; font-family:var(--serif); font-size:1.6rem; font-weight:600; color:var(--accent);
+}
+.metric-cap{ display:block; margin-top:6px; font-size:0.84rem; line-height:1.4; color:var(--ink-soft); }
+
 /* ---------- password gate ---------- */
 .gate{
   min-height:80vh; display:flex; align-items:center; justify-content:center; padding:40px 24px;
@@ -290,7 +327,14 @@ figcaption{ font-size:0.85rem; color:var(--ink-faint); margin-top:10px; text-ali
 @media (max-width:760px){
   .case-meta{ grid-template-columns:repeat(2,1fr); }
   .grid-2, .grid-4{ grid-template-columns:1fr 1fr; }
+  .metrics{ grid-template-columns:1fr 1fr; }
+  .work-toc{ grid-template-columns:1fr; }
 }
 @media (max-width:520px){
   .grid-4{ grid-template-columns:1fr 1fr; }
+  .metrics{ grid-template-columns:1fr; }
+}
+@media (max-width:600px){
+  .wblock{ grid-template-columns:1fr; gap:4px; }
+  .wblock-label{ padding-top:0; }
 }

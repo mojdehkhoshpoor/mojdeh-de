@@ -29,6 +29,23 @@
   </div>
 </nav>
 
+<!-- ============ PASSWORD GATE ============ -->
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <div class="icon">🔒</div>
+    <h2>This site is private for now</h2>
+    <p>I'm still finishing it up, so it's only visible to people I've sent the password to directly. If that's you, go ahead.</p>
+    <form class="gate-form" id="gate-form">
+      <input type="password" id="gate-password" placeholder="Password" autocomplete="off" required>
+      <button type="submit">Unlock site</button>
+      <div class="gate-error" id="gate-error"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ SITE CONTENT ============ -->
+<div id="case-content" class="hidden">
+
 <header class="case-hero" style="padding-top:56px;">
   <div class="wrap">
     <span class="eyebrow">About</span>
@@ -154,8 +171,10 @@
   © <span id="year"></span> Mojdeh Khoshpoor · Munich, Germany
 </footer>
 
+</div>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/gate.js"></script>
 </body>
 </html>
-

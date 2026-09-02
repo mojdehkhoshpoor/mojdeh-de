@@ -27,6 +27,15 @@
   function unlock() {
     gate.classList.add("hidden");
     content.classList.remove("hidden");
+    // If we arrived via a link to a specific project (e.g. portfolio.html#pipeline),
+    // jump there now that its content is visible — otherwise go to the top.
+    if (window.location.hash) {
+      var target = document.getElementById(window.location.hash.slice(1));
+      if (target) {
+        target.scrollIntoView();
+        return;
+      }
+    }
     window.scrollTo(0, 0);
   }
 
